@@ -13,31 +13,31 @@ const sass = require('gulp-sass')(require('sass'));
 
 const routes = {
     pug: {
-        watch: "src/**/*.pug",
-        src: "src/*.pug",    
+        watch: "src/pug/**/*.pug",
+        src: "src/pug/*.pug",    
         dest: "build"
     },
     img: {
-        src: "src/img/*",
-        dest: "build/img"
+        src: "src/assets/img/*",
+        dest: "build/assets/img"
     },
     scss: {
         watch: "src/scss/**/*.scss",
         src: "src/scss/style.scss",
-        dest: "build/css"
+        dest: "build/assets/css"
     },
     css: {
-        src: "src/css/**/*.css",
-        dest: "build/css"
+        src: "src/assets/css/**/*.css",
+        dest: "build/assets/css"
     },
     library: {
-        src: "src/lib/**/*",
-        dest: "build/lib"
+        src: "src/assets/lib/**/*",
+        dest: "build/assets/lib"
     },
     js: {
         watch: "src/js/**/*.js",
         src: "src/js/main.js",
-        dest: "build/js"
+        dest: "build/assets/js"
     }
 }
 
