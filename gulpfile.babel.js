@@ -27,7 +27,8 @@ const routes = {
         dest: "build/assets/css"
     },
     css: {
-        src: "src/assets/css/**/*.css",
+        watch:"src/assets/css/*.css",
+        src: "src/assets/css/*.css",
         dest: "build/assets/css"
     },
     library: {
@@ -95,6 +96,7 @@ const ghDeploy = () => gulp.src("build/**/*").pipe(ghPages());
 const watch = () => { 
     gulp.watch(routes.pug.watch, pug);
     gulp.watch(routes.img.src, img);
+    gulp.watch(routes.css.watch, css);
     gulp.watch(routes.scss.watch, scss);
     gulp.watch(routes.js.watch, js);
 };
