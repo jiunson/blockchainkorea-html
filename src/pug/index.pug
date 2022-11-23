@@ -1,4 +1,426 @@
 extends templates/layout 
 
 block content 
-    
+    // Spinner Start
+    div#spinner.show.bg-white.position-fixed.translate-middle.w-100.vh-100.top-50.start-50.d-flex.align-items-center.justify-content-center
+        div.spinner-grow.text-primary(role='status')
+    // Spinner End
+
+    // Navbar Start
+    div.container-fluid.fixed-top.px-0.wow.fadeIn(data-wow-delay='0.1s')
+        div.top-bar.text-white-50.row.gx-0.align-items-center.d-none.d-lg-flex
+            div.col-lg-6.px-5.text-Start
+                small 
+                    i.fa.fa-map-marker-alt.me-2
+                    | 123 Street, New York, USA
+                small.ms-4
+                    i.fa.fa-envelope.me-2
+                    | info@example.com
+            div.col-lg-6.px-5.text-End
+                small Follow us! 
+                a.text-white-50.ms-3(href='')
+                    i.fab.fa-facebook-f
+                a.text-white-50.ms-3(href='')
+                    i.fab.fa-twitter
+                a.text-white-50.ms-3(href='')
+                    i.fab.fa-linkedin-in
+                a.text-white-50.ms-3(href='')
+                    i.fab.fa-instagram
+
+        nav.navbar.navbar-expand-lg.navbar-dark.py-lg-0.px-lg-5.wow.fadeIn(data-wow-delay='0.1s')
+            a.navbar-brand.ms-4.ms-lg-0(href='index.html')
+                h1.fw-bold.text-primary.m-0 Chari 
+                    span.text-white Team 
+            buton.navbar-toggler.me-4(type='button', data-bs-toggle='collapse', data-bs-target='#navbarCollapse')
+                span.navbar-toggler-icon
+            div#navbarCollapse.collapse.navbar-collapse
+                div.navbar-nav.ms-auto.p-4.p-lg-0
+                    a.av-item.nav-link.active(href='index.html') Home 
+                    a.av-item.nav-link(href='about.html') About 
+                    a.av-item.nav-link(href='causes.html') Causes 
+                    div.nav-item.dropdown
+                        a.nav-link.dropdown-toggle(href='#', data-bs-toggle='dropdown') Pages
+                        div.dropdown-menu.m-0
+                            a.dropdown-item(href='service.html') Service
+                            a.dropdown-item(href='donate.html') Donate
+                            a.dropdown-item(href='team.html') Our Team
+                            a.dropdown-item(href='testimonial.html') Testimonial
+                            a.dropdown-item(href='404.html') 404 Page
+                            
+                    a.av-item.nav-link(href='contact.html') Contact
+                div.d-none.d-lg-flex.ms-2
+                    a.btn.btn-outline-primary.py-2.px-3(href='') Donate Now 
+                        div.d-inline-flex.btn-sm-square.bg-white.text-primary.rounded-circle.ms-2
+                            i.fa.fa-arrow-right
+    // Navbar End
+
+    // Carousel Start
+    div.container-fluid.p-0.mb-5
+        div#header-carousel.carousel.slide(data-bs-ride='carousel')
+            div.carousel-inner
+                div.carousel-item.active
+                    img.w-100(src='/assets/img/carousel-1.jpg', alt='Image')
+                    div.carousel-caption
+                        div.container
+                            div.row.justify-content-center
+                                div.col-lg-7.pt-5
+                                    h1.display-4.text-white.mb-3.animated.slideInDown Let's Change The World With Humanity
+                                    p.fs-5.text-white-50.mb-5.animated.slideInDown Aliqu diam amet diam et eos. Clita erat ipsum et lorem sed stet lorem sit clita duo justo erat amet
+                                    a.btn.btn-primary.py-2.px-3.animated.slideInDown(href='') Learn More 
+                                        div.d-inline-flex.btn-sm-square.bg-white.text-primary.rounded-circle.ms-2
+                                            i.fa.fa-arrow-right
+                div.carousel-item
+                    img.w-100(src='/assets/img/carousel-2.jpg', alt='Image')
+                    div.carousel-caption
+                        div.container
+                            div.row.justify-content-center
+                                div.col-lg-7.pt-5
+                                    h1.display-4.text-white.mb-3.animated.slideInDown Let's Change The World With Humanity
+                                    p.fs-5.text-white-50.mb-5.animated.slideInDown Aliqu diam amet diam et eos. Clita erat ipsum et lorem sed stet lorem sit clita duo justo erat amet
+                                    a.btn.btn-primary.py-2.px-3.animated.slideInDown(href='') Learn More 
+                                        div.d-inline-flex.btn-sm-square.bg-white.text-primary.rounded-circle.ms-2
+                                            i.fa.fa-arrow-right
+                button.carousel-control-prev(type='button', data-bs-target='#header-carousel', data-bs-slide='prev') 
+                    span.carousel-control-prev-icon(aria-hidden='true')
+                    span.visually-hidden Previous
+                button.carousel-control-next(type='button', data-bs-target='#header-carousel', data-bs-slide='next') 
+                    span.carousel-control-next-icon(aria-hidden='true')
+                    span.visually-hidden Next
+
+    // Carousel End
+
+    // About Start
+    div.container-xxl.py-5
+        div.container
+            div.row.g-5
+                div.col-lg-6.wow.fadeInUp(data-wow-delay='0.1s')
+                    div.position-relative.overflow-hidden.h-100(style='min-height: 400px;')
+                        img.position-absolute.w-100.h-100.pt-5.pe-5(src='/assets/img/about-1.jpg', alt='', style='object-fit: cover;')
+                        img.position-absolute.top-0.end-0.bg-white.ps-2.pb-2(src='/assets/img/about-2.jpg', alt='', style='width: 200px; height: 200px;')
+                div.col-lg-6.wow.fadeInUp(data-wow-delay='0.5s')
+                    div.h-100 
+                        div.d-inline-block.rounded-pill.bg-secondary.text-primary.py-1.px-3.mb-3 About Us
+                        h1.display-6.mb-5 We Help People In Need Around The World
+                        div.bg-light.border-bottom.border-5.border-primary.rounded.p-4.mb-4
+                            p.text-dark.mb-2 Aliqu diam amet diam et eos. Clita erat ipsum et lorem sed stet lorem sit clita duo justo erat amet
+                            span.text-primary
+                        p.mb-5 Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet
+                        a.btn.btn-primary.py-2.px-3.me-3(href='') Learn More 
+                            div.d-inline-flex.btn-sm-square.bg-white.text-primary.rounded-circle.ms-2
+                                i.fa.fa-arrow-right
+                        a.btn.btn-outline-primary.py-2.px-3(href='') Contact Us 
+                            div.d-inline-flex.btn-sm-square.bg-primary.text-white.rounded-circle.ms-2
+                                i.fa.fa-arrow-right
+    // About End
+
+    // Causes Start
+    div.container-xxl.bg-light.my-5.py-5
+        div.container.py-5
+            div.text-center.mx-auto.mb-5.wow.fadeInUp(data-wow-delay='0.1s', style='max-width: 500px;')
+                div.d-inline-block.rounded-pill.bg-secondary.text-primary.py-1.px-3.mb-3 Feature Causes 
+                h1.display-6.mb-5 Every Child Deserves The Opportunity To Learn
+            div.row.g-4.justify-content-center
+                //
+                div.col-lg-4.col-md-6.wow.fadeInUp(data-wow-delay='0.1s')
+                    div.causes-item.d-flex.flex-column.bg-white.border-top.border-5.border-primary.rounded-top.overflow-hidden.h-100
+                        div.text-center.p-4.pt-0
+                            div.d-inline-block.bg-primary.text-white.rounded-bottom.fs-5.pb-1.px-3.mb-4
+                                small Education
+                            h5.mb-3 Education For African Children
+                            p Tempor erat elitr rebum at clita dolor diam ipsum sit diam amet diam et eos
+                            div.causes-progress.bg-light.p-3.pt-2
+                                div.d-flex.justify-content-between
+                                    p.text-dark $10,000
+                                        small.text-body Goal 
+                                    p.text-dark $9,542
+                                        small.text-body Raised 
+                                div.progress 
+                                    div.progress-bar(role='progressbar', aria-valuenow='90', aria-valuemin='0', aria-valuemax='100')
+                                        span 90%
+                        div.position-relative.mt-auto
+                            img.img-fluid(src='/assets/img/courses-1.jpg', alt="")
+                            div.causes-overlay
+                                a.btn.btn-outline-primary(href="") Read More 
+                                    div.d-inline-flex.btn-sm-square.bg-primary.text-white.rounded-circle.ms-2
+                                        i.fa.fa-arrow-right
+                //
+                div.col-lg-4.col-md-6.wow.fadeInUp(data-wow-delay='0.3s')
+                    div.causes-item.d-flex.flex-column.bg-white.border-top.border-5.border-primary.rounded-top.overflow-hidden.h-100
+                        div.text-center.p-4.pt-0
+                            div.d-inline-block.bg-primary.text-white.rounded-bottom.fs-5.pb-1.px-3.mb-4
+                                small Pure Water
+                            h5.mb-3 Ensure Pure Drinking Water
+                            p Tempor erat elitr rebum at clita dolor diam ipsum sit diam amet diam et eos
+                            div.causes-progress.bg-light.p-3.pt-2
+                                div.d-flex.justify-content-between
+                                    p.text-dark $10,000
+                                        small.text-body Goal 
+                                    p.text-dark $9,542
+                                        small.text-body Raised 
+                                div.progress 
+                                    div.progress-bar(role='progressbar', aria-valuenow='90', aria-valuemin='0', aria-valuemax='100')
+                                        span 90%
+                        div.position-relative.mt-auto
+                            img.img-fluid(src='/assets/img/courses-2.jpg', alt="")
+                            div.causes-overlay
+                                a.btn.btn-outline-primary(href="") Read More 
+                                    div.d-inline-flex.btn-sm-square.bg-primary.text-white.rounded-circle.ms-2
+                                        i.fa.fa-arrow-right
+                //
+                div.col-lg-4.col-md-6.wow.fadeInUp(data-wow-delay='0.5s')
+                    div.causes-item.d-flex.flex-column.bg-white.border-top.border-5.border-primary.rounded-top.overflow-hidden.h-100
+                        div.text-center.p-4.pt-0
+                            div.d-inline-block.bg-primary.text-white.rounded-bottom.fs-5.pb-1.px-3.mb-4
+                                small Healthy Life
+                            h5.mb-3 Ensure Pure Drinking Water
+                            p Tempor erat elitr rebum at clita dolor diam ipsum sit diam amet diam et eos
+                            div.causes-progress.bg-light.p-3.pt-2
+                                div.d-flex.justify-content-between
+                                    p.text-dark $10,000
+                                        small.text-body Goal 
+                                    p.text-dark $9,542
+                                        small.text-body Raised 
+                                div.progress 
+                                    div.progress-bar(role='progressbar', aria-valuenow='90', aria-valuemin='0', aria-valuemax='100')
+                                        span 90%
+                        div.position-relative.mt-auto
+                            img.img-fluid(src='/assets/img/courses-3.jpg', alt="")
+                            div.causes-overlay
+                                a.btn.btn-outline-primary(href="") Read More 
+                                    div.d-inline-flex.btn-sm-square.bg-primary.text-white.rounded-circle.ms-2
+                                        i.fa.fa-arrow-right
+    // Causers End
+
+    // Service Start
+    .container-xxl.py-5
+        .container
+            .text-center.mx-auto.mb-5.wow.fadeInUp(data-wow-delay='0.1s', style='max-width: 500px;')
+                .d-inline-block.rounded-pill.bg-secondary.text-primary.py-1.px-3.mb-3 What We Do
+                h1.display-6.mb-5 Learn More What We Do And Get Involveds
+            .row.g-4.justify-content-center
+                // 
+                .col-lg-4.col-md-6.wow.fadeInUp(data-wow-delay='0.1s')
+                    .service-item.bg-white.text-center.h-100.p-4.p-xl-5
+                        img.img-fluid.mb-4(src='/assets/img/icon-1.png', alt='')
+                        h4.mb-3 Child Education
+                        p.mb-4 Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed vero dolor duo.
+                        a.btn.btn-outline-primary.px-3(href='') Learn More 
+                            .d-inline-flex.btn-sm-square.bg-primary.text-white.rounded-circle.ms-2
+                                i.fa.fa-arrow-right
+
+                //
+                .col-lg-4.col-md-6.wow.fadeInUp(data-wow-delay='0.3s')
+                    .service-item.bg-white.text-center.h-100.p-4.p-xl-5
+                        img.img-fluid.mb-4(src='/assets/img/icon-2.png', alt='')
+                        h4.mb-3 Medical Treatment
+                        p.mb-4 Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed vero dolor duo.
+                        a.btn.btn-outline-primary.px-3(href='') Learn More 
+                            .d-inline-flex.btn-sm-square.bg-primary.text-white.rounded-circle.ms-2
+                                i.fa.fa-arrow-right
+                
+                //
+                .col-lg-4.col-md-6.wow.fadeInUp(data-wow-delay='0.5s')
+                    .service-item.bg-white.text-center.h-100.p-4.p-xl-5
+                        img.img-fluid.mb-4(src='/assets/img/icon-3.png', alt='')
+                        h4.mb-3 Pure Drinking Water
+                        p.mb-4 Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed vero dolor duo.
+                        a.btn.btn-outline-primary.px-3(href='') Learn More 
+                            .d-inline-flex.btn-sm-square.bg-primary.text-white.rounded-circle.ms-2
+                                i.fa.fa-arrow-right
+    // Service End
+
+    // Donate Start
+    .container-fluid.donate.my-5.py-5(data-parallax='scroll', data-image-src='/assets/img/carousel-2.jpg')
+        .container.py-5
+            .row.g-5.align-items-center
+                .col-lg-6.wow.fadeIn(data-wow-delay='0.1s')
+                    .d-inline-block.rounded-pill.bg-secondary.text-primary.py-1.px-3.mb-3 Donate Now
+                    h1.display-6.text-white.mb-5 Thanks For The Results Achieved With You
+                    p.text-white-50.mb-0 Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet
+                .col-lg-6.wow.fadeIn(data-wow-delay='0.5s')
+                    .h-100.bg-white.p-5
+                        form
+                            .row.g-3 
+                                .col-12 
+                                    .form-floating 
+                                        input#name.form-control.bg-light.border-0(type='text', placeholder='Your Name')
+                                        label(for='name') Your Name
+                                .col-12 
+                                    .form-floating 
+                                        input#email.form-control.bg-light.border-0(type='text', placeholder='Your Email')
+                                        label(for='email') Your Email
+                                .col-12 
+                                    .btn-group.d-flex.justify-content-around
+                                        input#btnradio1.btn-check(type='radio', name='btnradio', checked)
+                                        label.btn.btn-light.py-3(for='btnradio1') $10
+
+                                        input#btnradio2.btn-check(type='radio', name='btnradio')
+                                        label.btn.btn-light.py-3(for='btnradio2') $20
+
+                                        input#btnradio3.btn-check(type='radio', name='btnradio')
+                                        label.btn.btn-light.py-3(for='btnradio3') $30
+                                .col-12 
+                                    button.btn.btn-primary.px-5(style='height: 60px;')  Donate Now 
+                                        .d-inline-flex.btn-sm-square.bg-white.text-primary.rounded-circle.ms-2
+                                            i.fa.fa-arrow-right
+    // Donate End 
+
+    // Team Start
+    .container-xxl.py-5
+        .container
+            .text-center.mx-auto.mb-5.wow.fadeInUp(data-wow-delay='0.1s', style='max-width: 500px;')
+                .d-inline-block.rounded-pill.bg-secondary.text-primary.py-1.px-3.mb-3 Team Members
+                h1.display-6.mb-5 Let's Meet With Our Ordinary Soldiers
+            .row.g-4
+                //
+                .col-lg-3.col-md-6.wow.fadeInUp(data-wow-delay='0.1s')
+                    .team-item.position-relative.rounded.overflow-hidden
+                        .overflow-hidden
+                            img.img-fluid(src='/assets/img/team-1.jpg', alt='')
+                        .team-text.bg-light.text-center.p-4
+                            h5 Full Name 
+                            p.text-primary Designation
+                            .team-social.text-center
+                                a.btn.btn-square(href='') 
+                                    i.fab.fa-facebook-f
+                                a.btn.btn-square(href='') 
+                                    i.fab.fa-twitter
+                                a.btn.btn-square(href='') 
+                                    i.fab.fa-instagram
+                //
+                .col-lg-3.col-md-6.wow.fadeInUp(data-wow-delay='0.3s')
+                    .team-item.position-relative.rounded.overflow-hidden
+                        .overflow-hidden
+                            img.img-fluid(src='/assets/img/team-2.jpg', alt='')
+                        .team-text.bg-light.text-center.p-4
+                            h5 Full Name 
+                            p.text-primary Designation
+                            .team-social.text-center
+                                a.btn.btn-square(href='') 
+                                    i.fab.fa-facebook-f
+                                a.btn.btn-square(href='') 
+                                    i.fab.fa-twitter
+                                a.btn.btn-square(href='') 
+                                    i.fab.fa-instagram
+                //
+                .col-lg-3.col-md-6.wow.fadeInUp(data-wow-delay='0.5s')
+                    .team-item.position-relative.rounded.overflow-hidden
+                        .overflow-hidden
+                            img.img-fluid(src='/assets/img/team-3.jpg', alt='')
+                        .team-text.bg-light.text-center.p-4
+                            h5 Full Name 
+                            p.text-primary Designation
+                            .team-social.text-center
+                                a.btn.btn-square(href='') 
+                                    i.fab.fa-facebook-f
+                                a.btn.btn-square(href='') 
+                                    i.fab.fa-twitter
+                                a.btn.btn-square(href='') 
+                                    i.fab.fa-instagram
+                //
+                .col-lg-3.col-md-6.wow.fadeInUp(data-wow-delay='0.7s')
+                    .team-item.position-relative.rounded.overflow-hidden
+                        .overflow-hidden
+                            img.img-fluid(src='/assets/img/team-4.jpg', alt='')
+                        .team-text.bg-light.text-center.p-4
+                            h5 Full Name 
+                            p.text-primary Designation
+                            .team-social.text-center
+                                a.btn.btn-square(href='') 
+                                    i.fab.fa-facebook-f
+                                a.btn.btn-square(href='') 
+                                    i.fab.fa-twitter
+                                a.btn.btn-square(href='') 
+                                    i.fab.fa-instagram
+    // Team End 
+
+    // Testmonial Start
+    .container-xxl.py-5
+        .container
+            .text-center.mx-auto.mb-5.wow.fadeInUp(data-wow-delay='0.1s', style='max-width: 500px;')
+                .d-inline-block.rounded-pill.bg-secondary.text-primary.py-1.px-3.mb-3  Testimonial
+                h1.display-6.mb-5 Trusted By Thousands Of People And Nonprofits
+            .owl-carousel.testimonial-carousel.wow.fadeInUp(data-wow-delay='0.1s')
+                //
+                .testimonial-item.text-center
+                    img.img-fluid.bg-light.rounded-circle.p-2.mx-auto.mb-4(src='/assets/img/testimonial-1.jpg', style='width: 100px; height: 100px;')
+                    .testimonial-text.rounded.text-center.p-4
+                        p Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
+                        h5.mb-1 Doner Name
+                        span.fst-italic Profession
+                //
+                .testimonial-item.text-center
+                    img.img-fluid.bg-light.rounded-circle.p-2.mx-auto.mb-4(src='/assets/img/testimonial-2.jpg', style='width: 100px; height: 100px;')
+                    .testimonial-text.rounded.text-center.p-4
+                        p Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
+                        h5.mb-1 Doner Name
+                        span.fst-italic Profession
+                //
+                .testimonial-item.text-center
+                    img.img-fluid.bg-light.rounded-circle.p-2.mx-auto.mb-4(src='/assets/img/testimonial-3.jpg', style='width: 100px; height: 100px;')
+                    .testimonial-text.rounded.text-center.p-4
+                        p Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
+                        h5.mb-1 Doner Name
+                        span.fst-italic Profession
+
+    // Testmonial End
+
+    // Footer Start
+    .container-fluid.bg-dark.text-white-50.footer.mt-5.pt-5.wow.fadeIn(data-wow-delay='0.1s')
+        .container.py-5
+            .row.g-5
+                //
+                .col-lg-3.col-md-6
+                    h1.fw-bold.text-primary.mb-4 Chari 
+                        span.text-white Team 
+                    p Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita
+                    .d-flex.pt-2
+                        a.btn.btn-square.me-1(href='')
+                            i.fab.fa-twitter
+                        a.btn.btn-square.me-1(href='')
+                            i.fab.fa-facebook-f
+                        a.btn.btn-square.me-1(href='')
+                            i.fab.fa-youtube
+                        a.btn.btn-square.me-0(href='')
+                            i.fab.fa-linkedin-in
+                //
+                .col-lg-3.col-md-6
+                    h5.text-light.mb-4 Address 
+                    p 
+                        i.fa.fa-map-marker-alt.me-3
+                        | 123 Street, New York, USA
+                    p 
+                        i.fa.fa-phone-alt.me-3
+                        | +012 345 67890
+                    p 
+                        i.fa.fa-envelope.me-3
+                        | info@example.com
+                //
+                .col-lg-3.col-md-6
+                    h5.text-light.mb-4 Quick Links
+                        a.btn.btn-link(href='') About Us
+                        a.btn.btn-link(href='') Contact Us
+                        a.btn.btn-link(href='') Our Services
+                        a.btn.btn-link(href='') Terms & Condition
+                        a.btn.btn-link(href='') Support
+                //
+                .col-lg-3.col-md-6
+                    h5.text-light.mb-4 Newsletter
+                    p Dolor amet sit justo amet elitr clita ipsum elitr est.
+                    .position-relative.mx-auto(style='max-width: 400px;')
+                        input.form-control.bg-transparent.w-100.py-3.ps-4.pe-5(type='text', placeholder='Your email')
+                        button.btn.btn-primary.py-2.position-absolute.top-0.end-0.mt-2.me-2(type='button') SignUp
+        
+        .container-fluid.copyright
+            .container 
+                .row 
+                    .col-md-6.text-center.text-md-start.mb-3.mb-md-0 &copy;
+                        a(href='') Your Site Name 
+                        | , All Right Reserved.
+                    .col-md-6.text-center.text-md-end Designed By 
+                        a(href='') HTML Codex
+    // Footer End
+
+    /// Back to Top
+    a.btn.btn-lg.btn-primary.btn-lg-square.back-to-top(href='#')
+        i.bi.bi-arrow-up
