@@ -29,9 +29,20 @@ html(lang="ko")
         link(rel="stylesheet", href="/assets/css/style.css")
         
     body 
+        // Spinner Start
+        div#spinner.show.bg-white.position-fixed.translate-middle.w-100.vh-100.top-50.start-50.d-flex.align-items-center.justify-content-center
+            div.spinner-grow.text-primary(role='status')
+        // Spinner End
+
+        include ../partials/header
+
         block content 
 
         include ../partials/footer 
+
+        /// Back to Top
+        a.btn.btn-lg.btn-primary.btn-lg-square.back-to-top(href='#')
+            i.bi.bi-arrow-up
 
         // JavaScript Libraries
         script(src="https://code.jquery.com/jquery-3.4.1.min.js")
