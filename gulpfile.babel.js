@@ -13,8 +13,8 @@ const sass = require('gulp-sass')(require('sass'));
 
 const routes = {
     pug: {
-        watch: "src/pug/**/*.pug",
-        src: "src/pug/*.pug",    
+        watch: ["src/pug/**/*.pug"],
+        src: "src/pug/**/*.pug",    
         dest: "build"
     },
     img: {
