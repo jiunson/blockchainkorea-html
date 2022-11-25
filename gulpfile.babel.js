@@ -62,6 +62,8 @@ const img = () =>
     .pipe(image())                                  // 이미지 최적화.
     .pipe(gulp.dest(routes.img.dest));
 
+// bootstrap scss 컴파일 시 gulp에는 오류가 있다.
+// bootstrp scss는 vscode의 익스텐션 LIVE Scss Compiler를 사용하여 gulp와 별도로 사용하는 것이 좋다.
 const scss = () =>
     gulp
     .src(routes.scss.src)
