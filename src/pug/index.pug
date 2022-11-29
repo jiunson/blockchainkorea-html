@@ -6,7 +6,7 @@ block content
         div#header-carousel.carousel.slide(data-bs-ride='carousel')
             div.carousel-inner
                 div.carousel-item.active
-                    img.w-100(src='/assets/img/carousel-1.jpg', alt='Image')
+                    img.w-100(src='/assets/img/main-visual-1.jpg', alt='Image')
                     div.carousel-caption
                         div.container
                             div.row.justify-content-center
@@ -16,8 +16,10 @@ block content
                                     a.btn.btn-primary.py-2.px-3.animated.slideInDown(href='') 자세히 보기 
                                         div.d-inline-flex.btn-sm-square.bg-white.text-primary.rounded-circle.ms-2
                                             i.fa.fa-arrow-right
+
+
                 div.carousel-item
-                    img.w-100(src='/assets/img/carousel-2.jpg', alt='Image')
+                    img.w-100(src='/assets/img/main-visual-2.jpg', alt='Image')
                     div.carousel-caption
                         div.container
                             div.row.justify-content-center
@@ -27,6 +29,7 @@ block content
                                     a.btn.btn-primary.py-2.px-3.animated.slideInDown(href='') 자세히 보기
                                         div.d-inline-flex.btn-sm-square.bg-white.text-primary.rounded-circle.ms-2
                                             i.fa.fa-arrow-right
+
 
                 button.carousel-control-prev(type='button', data-bs-target='#header-carousel', data-bs-slide='prev') 
                     span.carousel-control-prev-icon(aria-hidden='true')
@@ -69,8 +72,8 @@ block content
 
     
 
-    // Donate Start
-    .container-fluid.donate.my-5.py-5(data-parallax='scroll', data-image-src='/assets/img/carousel-2.jpg')
+    // Notice Start
+    .container-fluid.my-5.py-5(data-parallax='scroll', data-image-src='/assets/img/main-notice-bg.jpg')
         .container.py-5
             .row.g-5.align-items-center
                 .col-lg-5.wow.fadeIn(data-wow-delay='0.1s')
@@ -92,133 +95,58 @@ block content
                                     button.btn.btn-primary.px-5(style='height: 60px;')  Read More
                                         .d-inline-flex.btn-sm-square.bg-white.text-primary.rounded-circle.ms-2
                                             i.fa.fa-arrow-right
-    // Donate End 
+    // Notice End 
 
-    // Team Start
+    // Member Start
     .container-xxl.py-5
         .container
-            .text-center.mx-auto.mb-5.wow.fadeInUp(data-wow-delay='0.1s', style='max-width: 500px;')
-                .d-inline-block.rounded-pill.bg-secondary.text-primary.py-1.px-3.mb-3 Team Members
-                h1.display-6.mb-5 한국블록체인진흥원 회원사
+            .text-center.mx-auto.mb-5.wow.fadeInUp(data-wow-delay='0.1s', style='max-width: 550px;')
+                .d-inline-block.rounded-pill.bg-secondary.text-primary.py-1.px-3.mb-3 Members
+                h1.display-6.mb-5 한국블록체인진흥원 주요 회원사
             .row.g-4
                 //
                 .col-lg-3.col-md-6.wow.fadeInUp(data-wow-delay='0.1s')
                     .team-item.position-relative.rounded.overflow-hidden
                         .overflow-hidden
-                            img.img-fluid(src='/assets/img/team-1.jpg', alt='')
+                            img.img-fluid(src='/assets/img/member-logo-1.jpg', alt='')
                         .team-text.bg-light.text-center.p-4
                             h5 그라운드원 
                             p.text-primary 임원사 
                             .team-social.text-center
-                                a.btn.btn-square(href='') 
-                                    i.fab.fa-facebook-f
-                                a.btn.btn-square(href='') 
-                                    i.fab.fa-twitter
-                                a.btn.btn-square(href='') 
-                                    i.fab.fa-instagram
+                                a.btn.btn-square(href='https://www.groundx.xyz', target='_blank') 
+                                    i.fas.fa-link
                 //
                 .col-lg-3.col-md-6.wow.fadeInUp(data-wow-delay='0.3s')
                     .team-item.position-relative.rounded.overflow-hidden
                         .overflow-hidden
-                            img.img-fluid(src='/assets/img/team-2.jpg', alt='')
+                            img.img-fluid(src='/assets/img/member-logo-1.jpg', alt='')
                         .team-text.bg-light.text-center.p-4
                             h5 그레이브릿지 
                             p.text-primary 정회원 
                             .team-social.text-center
-                                a.btn.btn-square(href='') 
-                                    i.fab.fa-facebook-f
-                                a.btn.btn-square(href='') 
-                                    i.fab.fa-twitter
-                                a.btn.btn-square(href='') 
-                                    i.fab.fa-instagram
+                                a.btn.btn-square(href='https://www.groundx.xyz', target='_blank') 
+                                    i.fas.fa-link
                 //
                 .col-lg-3.col-md-6.wow.fadeInUp(data-wow-delay='0.5s')
                     .team-item.position-relative.rounded.overflow-hidden
                         .overflow-hidden
-                            img.img-fluid(src='/assets/img/team-3.jpg', alt='')
+                            img.img-fluid(src='/assets/img/member-logo-1.jpg', alt='')
                         .team-text.bg-light.text-center.p-4
                             h5 네오플라이 
                             p.text-primary 정회원 
                             .team-social.text-center
-                                a.btn.btn-square(href='') 
-                                    i.fab.fa-facebook-f
-                                a.btn.btn-square(href='') 
-                                    i.fab.fa-twitter
-                                a.btn.btn-square(href='') 
-                                    i.fab.fa-instagram
+                                a.btn.btn-square(href='https://www.groundx.xyz', target='_blank') 
+                                    i.fas.fa-link
                 //
                 .col-lg-3.col-md-6.wow.fadeInUp(data-wow-delay='0.7s')
                     .team-item.position-relative.rounded.overflow-hidden
                         .overflow-hidden
-                            img.img-fluid(src='/assets/img/team-4.jpg', alt='')
+                            img.img-fluid(src='/assets/img/member-logo-1.jpg', alt='')
                         .team-text.bg-light.text-center.p-4
                             h5 베리드코리아
                             p.text-primary 정회원 
                             .team-social.text-center
-                                a.btn.btn-square(href='') 
-                                    i.fab.fa-facebook-f
-                                a.btn.btn-square(href='') 
-                                    i.fab.fa-twitter
-                                a.btn.btn-square(href='') 
-                                    i.fab.fa-instagram
-                //
-                .col-lg-3.col-md-6.wow.fadeInUp(data-wow-delay='0.1s')
-                    .team-item.position-relative.rounded.overflow-hidden
-                        .overflow-hidden
-                            img.img-fluid(src='/assets/img/team-1.jpg', alt='')
-                        .team-text.bg-light.text-center.p-4
-                            h5 그라운드원 
-                            p.text-primary 임원사 
-                            .team-social.text-center
-                                a.btn.btn-square(href='') 
-                                    i.fab.fa-facebook-f
-                                a.btn.btn-square(href='') 
-                                    i.fab.fa-twitter
-                                a.btn.btn-square(href='') 
-                                    i.fab.fa-instagram
-                //
-                .col-lg-3.col-md-6.wow.fadeInUp(data-wow-delay='0.3s')
-                    .team-item.position-relative.rounded.overflow-hidden
-                        .overflow-hidden
-                            img.img-fluid(src='/assets/img/team-2.jpg', alt='')
-                        .team-text.bg-light.text-center.p-4
-                            h5 그레이브릿지 
-                            p.text-primary 정회원 
-                            .team-social.text-center
-                                a.btn.btn-square(href='') 
-                                    i.fab.fa-facebook-f
-                                a.btn.btn-square(href='') 
-                                    i.fab.fa-twitter
-                                a.btn.btn-square(href='') 
-                                    i.fab.fa-instagram
-                //
-                .col-lg-3.col-md-6.wow.fadeInUp(data-wow-delay='0.5s')
-                    .team-item.position-relative.rounded.overflow-hidden
-                        .overflow-hidden
-                            img.img-fluid(src='/assets/img/team-3.jpg', alt='')
-                        .team-text.bg-light.text-center.p-4
-                            h5 네오플라이 
-                            p.text-primary 정회원 
-                            .team-social.text-center
-                                a.btn.btn-square(href='') 
-                                    i.fab.fa-facebook-f
-                                a.btn.btn-square(href='') 
-                                    i.fab.fa-twitter
-                                a.btn.btn-square(href='') 
-                                    i.fab.fa-instagram
-                //
-                .col-lg-3.col-md-6.wow.fadeInUp(data-wow-delay='0.7s')
-                    .team-item.position-relative.rounded.overflow-hidden
-                        .overflow-hidden
-                            img.img-fluid(src='/assets/img/team-4.jpg', alt='')
-                        .team-text.bg-light.text-center.p-4
-                            h5 베리드코리아
-                            p.text-primary 정회원 
-                            .team-social.text-center
-                                a.btn.btn-square(href='') 
-                                    i.fab.fa-facebook-f
-                                a.btn.btn-square(href='') 
-                                    i.fab.fa-twitter
-                                a.btn.btn-square(href='') 
-                                    i.fab.fa-instagram
-    // Team End 
+                                a.btn.btn-square(href='https://www.groundx.xyz', target='_blank') 
+                                    i.fas.fa-link
+                
+    // Member End 

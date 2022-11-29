@@ -1,0 +1,157 @@
+extends templates/layout 
+
+block content 
+    // Page Header Start
+    .container-fluid.page-header.mb-5.wow.fadeIn(data-wow-delay='0.1s')
+        .container.text-center
+            h1.display-4.text-white.animated.slideInDown.mb-4 가입안내
+    // Page Header End 
+
+    // Memeber Type Start
+    .container-xxl.py-5
+        .container
+            .text-center.mx-auto.mb-5.wow.fadeInUp(data-wow-delay='0.1s', style='max-width: 800px;')
+                .d-inline-block.rounded-pill.bg-secondary.text-primary.py-1.px-3.mb-3 Classification of members 
+                h1.display-6.mb-5 회원구분 
+            .row.g-4.justify-content-center
+                // 
+                .col-lg-4.col-md-6.wow.fadeInUp(data-wow-delay='0.1s')
+                    .service-item.bg-white.text-center.h-100.p-4.p-xl-5
+                        img.img-fluid.mb-4(src='/assets/img/mem-type-1.png', alt='')
+                        h4.mb-3 정회원 
+                        p.mb-4 블록체인 관련 사업자, 금융기관 및 IT기업
+
+                //
+                .col-lg-4.col-md-6.wow.fadeInUp(data-wow-delay='0.3s')
+                    .service-item.bg-white.text-center.h-100.p-4.p-xl-5
+                        img.img-fluid.mb-4(src='/assets/img/mem-type-2.png', alt='')
+                        h4.mb-3 준회원 
+                        p.mb-4 블록체인 관련 연구 및 학술기관, 블록체인 관련 유관 공공기관
+                
+                //
+                .col-lg-4.col-md-6.wow.fadeInUp(data-wow-delay='0.5s')
+                    .service-item.bg-white.text-center.h-100.p-4.p-xl-5
+                        img.img-fluid.mb-4(src='/assets/img/mem-type-3.png', alt='')
+                        h4.mb-3 특별회원
+                        p.mb-4 법률/회계/세무 등 전문가 및 전문기관
+
+    // Memeber Type End
+
+    // Join Process Start
+    .container-xxl.py-5.fadeInUp(data-wow-delay='0.1s')
+        .container.mb-5
+            .text-center.mx-auto.mb-5.wow.fadeInUp(data-wow-delay='0.1s', style='max-width: 800px;')
+                .d-inline-block.rounded-pill.bg-secondary.text-primary.py-1.px-3.mb-3 Sign up procedure
+                h1.display-6.mb-5 가입절차  
+            .row.bs-wizard.wow.fadeInUp(style='border-bottom:0;', data-wow-delay='0.3s')
+                .col-lg-3.bs-wizard-step.complete 
+                    .text-center.bs-wizard-stepnum Step1 
+                    .progress
+                        .progress-bar
+                    a.bs-wizard-dot(href='#')
+                    .text-center 회원가입 
+
+                .col-lg-2.bs-wizard-step.complete 
+                    .text-center.bs-wizard-stepnum Step2
+                    .progress
+                        .progress-bar
+                    a.bs-wizard-dot(href='#')
+                    .text-center 입회심사  
+
+                .col-lg-2.bs-wizard-step.complete 
+                    .text-center.bs-wizard-stepnum Step3
+                    .progress
+                        .progress-bar
+                    a.bs-wizard-dot(href='#')
+                    .text-center 결과통지
+                .col-lg-2.bs-wizard-step.complete 
+                    .text-center.bs-wizard-stepnum Step4
+                    .progress
+                        .progress-bar
+                    a.bs-wizard-dot(href='#')
+                    .text-center 회비납부
+                .col-lg-3.bs-wizard-step.complete 
+                    .text-center.bs-wizard-stepnum Step5
+                    .progress
+                        .progress-bar
+                    a.bs-wizard-dot(href='#')
+                    .text-center 가입완료 
+
+
+    // Join Form Start
+    .container-fluid.py-5.wow.fadeInUp(data-wow-delay='0.1s')
+        .container 
+            .row.g-5.align-items-start
+                .col-lg-6.wow.fadeInUp(data-wow-delay='0.1s')
+                    .d-inline-block.rounded-pill.bg-secondary.text-primary.py-1.px-3.mb-3 Join Now 
+                    h1.display-6.mb-5 지금! 회원가입하세요.
+                    p.mb-2 만 14세 미만자는 법전 대리인 동의가 없는 경우 회원가입 등이 불가합니다. 
+                        ul 
+                            li
+                                small.text-muted 만 14세 미만자는 개인정보보호법 제22조 제6항, 제39조의3 제4항 및 동법 시행령 제48조의 3에 따라 법정대리인의 동의가 필요합니다.
+                            li
+                                small.text-muted 만 14세 미만자의 '한국블록체인협회 홈페이지 회원 가입 등' 시에 법정대리인의 동의서를 작성하여 info@blockchainkorea.org로 보내주시기 바랍니다. 법정대리인 동의 없이 가입된 경우 임의 탈퇴됩니다.
+                    p.mb-2 정회원의 경우 회비규정에 따라 연회비를 납부하여야 합니다. 
+                    p.mb-2 한국블록체인진흥원 문의 메일 : info@blockchainkorea.org 
+                
+                .col-lg-6.wow.fadeInUp(data-wow-delay='0.5s')
+                    .h-100.bg-secondary.p-5
+                        // .needs-validation or .was-validated 클래스로 validate 설정한다. 
+                        form.needs-validation(novalidate)
+                            .row.g-3 
+                                .col-lg-6
+                                    .form-floating 
+                                        input#name.form-control.bg-light.border-0(type='text', placeholder='이름', required)
+                                        label(for='name') 이름 
+                                        .invalid-feedback 이름을 입력해 주세요.
+                                .col-lg-6
+                                    .form-floating 
+                                        input#company.form-control.bg-light.border-0(type='text', placeholder='회사명', required)
+                                        label(for='company') 회사명  
+                                        .invalid-feedback 회사명을 입력해 주세요.
+                                .col-lg-6
+                                    .form-floating 
+                                        input#email.form-control.bg-light.border-0(type='email', placeholder='이메일', required)
+                                        label(for='email') 이메일 
+                                        .invalid-feedback 이메일을 입력해 주세요.
+                                .col-lg-6
+                                    .form-floating 
+                                        input#password.form-control.bg-light.border-0(type='password', placeholder='비밀번호', required)
+                                        label(for='password') 비밀번호
+                                        .invalid-feedback 비밀번호를 입력해 주세요.
+                                .col-12
+                                    .form-floating 
+                                        input#phone.form-control.bg-light.border-0(type='text', placeholder='휴대폰번호', required)
+                                        label(for='phone') 휴대폰번호   
+                                        .invalid-feedback 휴대폰번호를 입력해 주세요.
+                                .col-12 
+                                    .form-floating 
+                                        input#name.form-control.bg-light.border-0(type='text', placeholder='홈페이지 주소', required)
+                                        label(for='url') 홈페이지 주소 
+                                        .invalid-feedback 홈페이지 주소를 입력해 주세요.
+                                .col-12 
+                                    .btn-group.d-flex.justify-content-around
+                                        input#btnradio1.btn-check(name='btnradio', type='radio', checked)
+                                        label.btn.btn-light.py-3(for="btnradio1") 정회원 
+
+                                        input#btnradio1.btn-check(name='btnradio', type='radio')
+                                        label.btn.btn-light.py-3(for="btnradio1") 준회원 
+
+                                        input#btnradio1.btn-check(name='btnradio', type='radio')
+                                        label.btn.btn-light.py-3(for="btnradio1") 특별회원 
+                                .col-12 
+                                    .form-check
+                                        input#checkagree.form-check-input.me-2(type='checkbox' required)
+                                        label.form-check-label(for='checkagree') 
+                                            a(href='') 이용약관 
+                                            | 및 
+                                            a(href='') 개인정보처리방침
+                                            | 에 동의합니다. 
+                                        .invalid-feedback 가입신청 시 필수 체크사항입니다.
+                                .col-12 
+                                    button.btn.btn-primary.px-5(type='submit', style='height: 60px;') 가입신청하기
+                                        .d-inline-flex.btn-sm-square.bg-white.text-primary.rounded-circle.ms-2
+                                            i.fa.fa-arrow-right
+    // Join Form End 
+
+    script(src="/assets/js/bs-validate.js") 

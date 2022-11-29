@@ -1,0 +1,111 @@
+extends templates/layout 
+
+block content 
+    // Page Header Start
+    .container-fluid.page-header.mb-5.wow.fadeIn(data-wow-delay='0.1s')
+        .container.text-center
+            h1.display-4.text-white.animated.slideInDown.mb-4 협회안내
+    // Page Header End 
+
+    // About Start
+    .container-xxl.py-5
+        .container
+            .row.g-5
+                .col-lg-6.wow.fadeInUp(data-wow-delay='0.1s')
+                    .position-relative.overflow-hidden.h-100(style='min-height: 400px;')
+                        img.position-absolute.w-100.pt-5.pe-5(src='/assets/img/about-1.jpg', alt='', style='object-fit: cover;')
+                        img.position-absolute.top-0.end-0.bg-white.ps-2.pb-2(src='/assets/img/about-2.jpg', alt='', style='width: 200px; height: 200px;')
+                .col-lg-6.wow.fadeInUp(data-wow-delay='0.3s')
+                    .h-100 
+                        .d-inline-block.rounded-pill.bg-secondary.text-primary.py-1.px-3.mb-3 Introduction 
+                        h1.display-6.mb-5 한국블록체인진흥원은 블록체인사업 시장 및 기술의 발전을 위해 노력합니다. 
+                        p.mb-4 세계경제는 빠르게 변화하고 있으며 그 중심은 블록체인과 인공지능이 될 것으로 예측되고 있습니다. 인터넷과 정보기술이 등장한 이후 아마존, 구글, 페이스북 등이 거대한 테크 기업으로 성장하며 이제까지 경험하지 못한 빠른 속도로 세상을 바꾸고 있습니다.
+                        p.mb-4 이제 블록체인과 디지털자산의 새로운 시장이 태동하고 있습니다. 블록체인과 디지털자산 시장 발전을 위해서는 해결해 나가야할 규제와 이슈가 많습니다. 그러나 이를 성공적으로 해결하며 발전해 나가면 국가와 사회에 많은 새로운 기회를 열어 줄 것입니다. 블록체인과 디지털자산은 디지털 시대의 글로벌 경제와 국가 및 사회에 혁신적 변화를 가져올 것으로 기대됩니다.
+                        p.mb-4 블록체인 기술은 빠른 속도로 광범위하게 확산되어 금융과 핀테크, 유통, 무역, 물류네트워크, 의료서비스 등 경제뿐만 아니라 사회 문화 전반에 걸쳐 유용하게 활용됨으로써 인공지능 등 다른 4차 산업혁명 기술과 함께 우리 경제를 발전시키고 수많은 일자리를 창출할 것으로 기대됩니다.
+                        p.mb-4 한국블록체인협회는 블록체인 산업의 성장과 발전을 견인하여 국민과 기업 그리고 정부와 사회 모두가 함께 참여하며 성공적인 경제와 사회를 이루어 나아가는 비전과 희망을 주고자 합니다. 블록체인산업 발전으로 성장 잠재력을 확충하고 새로운 기회를 만들어 번영하는 미래를 건설해 나가는데 기여할 수 있도록 노력하고자 합니다.
+                        p.mb-4 감사합니다. 
+
+    // About End
+
+    // Team Start
+    .container-xxl.py-5
+        .container
+            .text-center.mx-auto.mb-5.wow.fadeInUp(data-wow-delay='0.1s', style='max-width: 500px;')
+                .d-inline-block.rounded-pill.bg-secondary.text-primary.py-1.px-3.mb-3 Important People
+                h1.display-6.mb-5 조직 구성원
+            .row.g-4
+                //
+                .col-lg-3.col-md-6.wow.fadeInUp(data-wow-delay='0.1s')
+                    .team-item.position-relative.rounded.overflow-hidden
+                        .overflow-hidden
+                            img.img-fluid(src='/assets/img/team-1.jpg', alt='')
+                        .team-text.bg-light.text-center.p-4
+                            h5 이한철
+                            p.text-primary 회장
+                            .team-social.text-center
+                                a.btn.btn-square(href='') 
+                                    i.fab.fa-facebook-f
+                                a.btn.btn-square(href='') 
+                                    i.fab.fa-twitter
+                                a.btn.btn-square(href='') 
+                                    i.fab.fa-instagram
+                //
+                .col-lg-3.col-md-6.wow.fadeInUp(data-wow-delay='0.3s')
+                    .team-item.position-relative.rounded.overflow-hidden
+                        .overflow-hidden
+                            img.img-fluid(src='/assets/img/team-2.jpg', alt='')
+                        .team-text.bg-light.text-center.p-4
+                            h5 홍기원
+                            p.text-primary 수석부회장
+                            .team-social.text-center
+                                a.btn.btn-square(href='') 
+                                    i.fab.fa-facebook-f
+                                a.btn.btn-square(href='') 
+                                    i.fab.fa-twitter
+                                a.btn.btn-square(href='') 
+                                    i.fab.fa-instagram
+                //
+                .col-lg-3.col-md-6.wow.fadeInUp(data-wow-delay='0.5s')
+                    .team-item.position-relative.rounded.overflow-hidden
+                        .overflow-hidden
+                            img.img-fluid(src='/assets/img/team-3.jpg', alt='')
+                        .team-text.bg-light.text-center.p-4
+                            h5 이강호
+                            p.text-primary 사무국장
+                            .team-social.text-center
+                                a.btn.btn-square(href='') 
+                                    i.fab.fa-facebook-f
+                                a.btn.btn-square(href='') 
+                                    i.fab.fa-twitter
+                                a.btn.btn-square(href='') 
+                                    i.fab.fa-instagram
+                //
+                .col-lg-3.col-md-6.wow.fadeInUp(data-wow-delay='0.7s')
+                    .team-item.position-relative.rounded.overflow-hidden
+                        .overflow-hidden
+                            img.img-fluid(src='/assets/img/team-4.jpg', alt='')
+                        .team-text.bg-light.text-center.p-4
+                            h5 강재근
+                            p.text-primary 감사 
+                            .team-social.text-center
+                                a.btn.btn-square(href='') 
+                                    i.fab.fa-facebook-f
+                                a.btn.btn-square(href='') 
+                                    i.fab.fa-twitter
+                                a.btn.btn-square(href='') 
+                                    i.fab.fa-instagram
+    // Team End 
+
+    // Contact Start
+    .container-xxl.py-5
+        .container
+            .text-center.mx-auto.mb-5.wow.fadeInUp(data-wow-delay='0.1s', style='max-width: 500px;')
+                .d-inline-block.rounded-pill.bg-secondary.text-primary.py-1.px-3.mb-3 Contact Us 
+                h1.display-6.mb-3 오시는 길 
+                p.mb-1 주소 
+            .row.g-5
+                .col-lg-12.wow.fadeInUp(data-wow-delay='0.3s', style='min-height: 450px;')
+                    .position-relative.rounded.overflow-hidden.h-100
+                        iframe.position-relative.w-100.h-100(aria-hidden='false', style='min-height: 450px; border:0;', frameborder='0', src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd')
+
+    // Contact End 
