@@ -1,0 +1,65 @@
+extends templates/layout 
+
+block content 
+    // Page Header Start
+    .container-fluid.page-header.mb-5.wow.fadeIn(data-wow-delay='0.1s')
+        .container.text-center
+            h1.display-4.text-white.animated.slideInDown.mb-4 협회소식 
+    // Page Header End 
+
+    // Notice Start
+    .container-xxl.py-5
+        .container
+            .row.g-4.justify-content-end 
+                .col-md-6.col-lg-4
+                    .text-right 
+                        .input-group.mb-3
+                            select.form-select
+                                option(selected) 전체
+                                option(value='title') 제목
+                                option(value='content') 내용
+                            input.form-control(type='text', placeholder='')
+                            button.btn.btn-primary(type='button') 검색 
+
+            .row.g-4.justify-content-center
+                .col-12.wow.fadeIn(data-wow-delay='0.5s')
+                    
+                    // View
+                    table.table.notice.mb-5
+                        thead
+                            tr 
+                                th(scope='col')
+            
+                        tbody 
+                            tr 
+                                td
+                                    h3 [행사 안내] 2022 블록체인 진흥주간
+                                    p.mb-0 작성일 : 2022.11.23 | 작성자 : 사무국 
+                            tr 
+                                td.py-5
+                                    p 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 
+                                    p 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 
+                                    p 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 
+                            tr 
+                                td
+                                    table.table.table-borderless.mb-0
+                                        tbody 
+                                            tr 
+                                                td.col-xs-2.col-sm-1 이전글 
+                                                td [행사 안내] 2022 블록체인 진흥주간
+                            tr 
+                                td
+                                    table.table.table-borderless.mb-0
+                                        tbody 
+                                            tr 
+                                                td.col-xs-2.col-sm-1 다음글
+                                                td [행사 안내] 2022 블록체인 진흥주간 
+                    
+                    // List Button
+                    .text-center 
+                        button.btn.btn-primary.px-5(style='height: 60px;') 목록
+
+            
+
+
+    // Notice End 

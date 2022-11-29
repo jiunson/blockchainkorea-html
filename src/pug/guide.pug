@@ -84,15 +84,19 @@ block content
             .row.g-5.align-items-start
                 .col-lg-6.wow.fadeInUp(data-wow-delay='0.1s')
                     .d-inline-block.rounded-pill.bg-secondary.text-primary.py-1.px-3.mb-3 Join Now 
-                    h1.display-6.mb-5 지금! 회원가입하세요.
-                    p.mb-2 만 14세 미만자는 법전 대리인 동의가 없는 경우 회원가입 등이 불가합니다. 
-                        ul 
-                            li
-                                small.text-muted 만 14세 미만자는 개인정보보호법 제22조 제6항, 제39조의3 제4항 및 동법 시행령 제48조의 3에 따라 법정대리인의 동의가 필요합니다.
-                            li
-                                small.text-muted 만 14세 미만자의 '한국블록체인협회 홈페이지 회원 가입 등' 시에 법정대리인의 동의서를 작성하여 info@blockchainkorea.org로 보내주시기 바랍니다. 법정대리인 동의 없이 가입된 경우 임의 탈퇴됩니다.
-                    p.mb-2 정회원의 경우 회비규정에 따라 연회비를 납부하여야 합니다. 
-                    p.mb-2 한국블록체인진흥원 문의 메일 : info@blockchainkorea.org 
+                    h1.display-6.mb-5 회원가입을 환영합니다.
+                    ul 
+                        li 
+                            p.mb-2 만 14세 미만자는 법전 대리인 동의가 없는 경우 회원가입 등이 불가합니다. 
+                                ul 
+                                    li
+                                        small.text-muted 만 14세 미만자는 개인정보보호법 제22조 제6항, 제39조의3 제4항 및 동법 시행령 제48조의 3에 따라 법정대리인의 동의가 필요합니다.
+                                    li
+                                        small.text-muted 만 14세 미만자의 '한국블록체인협회 홈페이지 회원 가입 등' 시에 법정대리인의 동의서를 작성하여 info@blockchainkorea.org로 보내주시기 바랍니다. 법정대리인 동의 없이 가입된 경우 임의 탈퇴됩니다.
+                        li
+                            p.mb-2 정회원의 경우 회비규정에 따라 연회비를 납부하여야 합니다. 
+                        li
+                            p.mb-2 한국블록체인진흥원 문의 메일 : info@blockchainkorea.org 
                 
                 .col-lg-6.wow.fadeInUp(data-wow-delay='0.5s')
                     .h-100.bg-secondary.p-5
@@ -131,22 +135,22 @@ block content
                                         .invalid-feedback 홈페이지 주소를 입력해 주세요.
                                 .col-12 
                                     .btn-group.d-flex.justify-content-around
-                                        input#btnradio1.btn-check(name='btnradio', type='radio', checked)
-                                        label.btn.btn-light.py-3(for="btnradio1") 정회원 
+                                        input#memtype1.btn-check(name='memtype', type='radio', checked, required)
+                                        label.btn.btn-light.py-3(for="memtype1") 정회원 
 
-                                        input#btnradio1.btn-check(name='btnradio', type='radio')
-                                        label.btn.btn-light.py-3(for="btnradio1") 준회원 
+                                        input#memtype2.btn-check(name='memtype', type='radio', required)
+                                        label.btn.btn-light.py-3(for="memtype2") 준회원 
 
-                                        input#btnradio1.btn-check(name='btnradio', type='radio')
-                                        label.btn.btn-light.py-3(for="btnradio1") 특별회원 
+                                        input#memtype3.btn-check(name='memtype', type='radio', required)
+                                        label.btn.btn-light.py-3(for="memtype3") 특별회원 
                                 .col-12 
                                     .form-check
                                         input#checkagree.form-check-input.me-2(type='checkbox' required)
                                         label.form-check-label(for='checkagree') 
                                             a(href='') 이용약관 
-                                            | 및 
+                                            span 및 
                                             a(href='') 개인정보처리방침
-                                            | 에 동의합니다. 
+                                            span 에 동의합니다. 
                                         .invalid-feedback 가입신청 시 필수 체크사항입니다.
                                 .col-12 
                                     button.btn.btn-primary.px-5(type='submit', style='height: 60px;') 가입신청하기

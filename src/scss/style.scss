@@ -449,7 +449,7 @@
     color: var(--primary);
 }
 
-/*** Form Wizard ***/
+/*** Form Sign ***/
 .bs-wizard {margin-top: 40px;}
 .bs-wizard {border-bottom: solid 1px #e0e0e0; padding: 0 0 10px 0;}
 .bs-wizard > .bs-wizard-step {padding: 0; position: relative;}
@@ -473,4 +473,10 @@
 /*** Bootstrap Overrides ***/
 .bg-dark {
     background-color: var(--dark) !important;
+}
+.form-check-label span {
+    color: #787878 !important
+}
+.notice a {
+    color: #787878;
 }
