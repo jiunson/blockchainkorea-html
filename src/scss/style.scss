@@ -183,7 +183,6 @@
 .page-header {
     padding-top: 12rem;
     padding-bottom: 6rem;
-    background: linear-gradient(rgba(0, 29, 35, .0), rgba(0, 29, 35, .0)), url(/assets/img/main-visual-2.jpg) center center no-repeat;
     background-size: cover;
 }
 
@@ -191,6 +190,21 @@
     color: #999999;
 }
 
+.page-header.header-1 {
+    background: linear-gradient(rgba(0, 29, 35, .0), rgba(0, 29, 35, .0)), url(/assets/img/header-1.jpg) center center no-repeat;
+}
+
+.page-header.header-2 {
+    background: linear-gradient(rgba(0, 29, 35, .0), rgba(0, 29, 35, .0)), url(/assets/img/header-2.jpg) center center no-repeat;
+}
+
+.page-header.header-3 {
+    background: linear-gradient(rgba(0, 29, 35, .0), rgba(0, 29, 35, .0)), url(/assets/img/header-3.jpg) center center no-repeat;
+}
+
+.page-header.header-4 {
+    background: linear-gradient(rgba(0, 29, 35, .0), rgba(0, 29, 35, .0)), url(/assets/img/header-4.jpg) center center no-repeat;
+}
 
 /*** Causes ***/
 .causes-item .progress {
