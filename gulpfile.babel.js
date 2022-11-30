@@ -118,4 +118,4 @@ const live = gulp.parallel([webserver, watch]);
 // export하지 않는다면, console이나 package.json에서 dev를 사용하지 못한다.
 export const build = gulp.series([prepare, assets]);
 export const dev = gulp.series([build, live]);
-export const deploy = gulp.series([build, ghDeploy, clean]);
+export const deploy = gulp.series([build, ghDeploy]);
