@@ -69,7 +69,7 @@ const scss = () =>
     .src(routes.scss.src)
     .pipe(sass().on("error", sass.logError))        // css 컴파일 
     .pipe(autoprefixer())                           // 하위 브라우저 호환코드 지원.
-    .pipe(miniCSS())                                // css파일 용량 최소화.
+    //.pipe(miniCSS())                                // css파일 용량 최소화.
     .pipe(gulp.dest(routes.scss.dest));
 
 const css = () => 
